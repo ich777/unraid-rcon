@@ -5,7 +5,7 @@
   <!ENTITY version   "2022.02.08">
   <!ENTITY gitURL    "https://github.com/&author;/unraid-&name;/raw/master">
   <!ENTITY pluginURL "&gitURL;/&name;.plg">
-  <!ENTITY md5       "5cbf214a6a615dd2f83ced2c337d4452">
+  <!ENTITY md5       "1685fedd2d5bec04d54ccea5ee341c59">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
   <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
