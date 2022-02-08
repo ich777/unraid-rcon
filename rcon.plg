@@ -35,6 +35,7 @@ rm -f $(ls /boot/config/plugins/&name;/rcon*.txz 2>/dev/null|grep -v '&version;'
 **RCON**
 
 This plugin adds RCON to your unRAID server and enables your to connecto to various servers who are following the RCON protocol standard.
+Simply issue 'rcon -h' from an unRAID Terminal and you get an overview on how to connect. A basic connection command will look like this: 'rcon -H RCONIP -p PORT -P PASSWORD'.
 
 ATTENTION: The RCON protocol transmits everything un-encrypted (including your password!). Therefore it is strongly recommended to not connect to RCON over the internet rather it is recommended to use a VPN or SSH if you want to connect to a foreign server over the internet.
 
