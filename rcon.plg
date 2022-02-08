@@ -39,7 +39,7 @@ Simply issue 'rcon -h' from an unRAID Terminal and you get an overview on how to
 
 ATTENTION: The RCON protocol transmits everything un-encrypted (including your password!). Therefore it is strongly recommended to not connect to RCON over the internet rather it is recommended to use a VPN or SSH if you want to connect to a foreign server over the internet.
 
-Source: https://github.com/dad98253/rcon
+Source: https://github.com/n0la/rcon
 </INLINE>
 </FILE>
 
