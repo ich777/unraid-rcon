@@ -10,7 +10,7 @@
   <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
 
-<PLUGIN  name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.8.3">
+<PLUGIN  name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.8.3" support="https://forums.unraid.net/topic/92865-support-ich777-amd-vendor-reset-coraltpu-hpsahba/">
 
 <CHANGES>
 
@@ -37,6 +37,7 @@ rm -f $(ls /boot/config/plugins/&name;/rcon*.txz 2>/dev/null|grep -v '&version;'
 This plugin adds RCON to your unRAID server and enables your to connecto to various servers who are following the RCON protocol standard.
 
 ATTENTION: The RCON protocol transmits everything un-encrypted (including your password!). Therefore it is strongly recommended to not connect to RCON over the internet rather it is recommended to use a VPN or SSH if you want to connect to a foreign server over the internet.
+
 Source: https://github.com/dad98253/rcon
 </INLINE>
 </FILE>
