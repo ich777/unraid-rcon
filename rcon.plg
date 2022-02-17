@@ -50,7 +50,6 @@ Source: https://github.com/n0la/rcon
 <URL>"&gitURL;/packages/libbsd-0.10.0-x86_64-2_slonly.txz"</URL>
 <MD5>1b8dbaa180721964bf9d864e50dae1ac</MD5>
 </FILE>
-</FILE>
 
 <FILE Run="/bin/bash" Method="remove">
 <INLINE>
