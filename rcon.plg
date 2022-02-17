@@ -2,7 +2,7 @@
 <!DOCTYPE PLUGIN [
   <!ENTITY name      "rcon">
   <!ENTITY author    "ich777">
-  <!ENTITY version   "2022.02.08">
+  <!ENTITY version   "2022.02.17">
   <!ENTITY gitURL    "https://github.com/&author;/unraid-&name;/raw/master">
   <!ENTITY pluginURL "&gitURL;/&name;.plg">
   <!ENTITY md5       "1685fedd2d5bec04d54ccea5ee341c59">
@@ -13,6 +13,9 @@
 <PLUGIN  name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.8.3" support="https://forums.unraid.net/topic/92865-support-ich777-amd-vendor-reset-coraltpu-hpsahba/">
 
 <CHANGES>
+
+###2022.02.17
+- Fix: added missing library libbsd
 
 ###2022.02.08
 - Initial release
@@ -41,6 +44,12 @@ ATTENTION: The RCON protocol transmits everything un-encrypted (including your p
 
 Source: https://github.com/n0la/rcon
 </INLINE>
+</FILE>
+
+<FILE Name="&plugin;/libbsd-0.10.0-x86_64-2_slonly.txz" Run="upgradepkg --install-new">
+<URL>"&gitURL;/packages/libbsd-0.10.0-x86_64-2_slonly.txz"</URL>
+<MD5>1b8dbaa180721964bf9d864e50dae1ac</MD5>
+</FILE>
 </FILE>
 
 <FILE Run="/bin/bash" Method="remove">
