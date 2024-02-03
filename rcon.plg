@@ -2,10 +2,10 @@
 <!DOCTYPE PLUGIN [
   <!ENTITY name      "rcon">
   <!ENTITY author    "ich777">
-  <!ENTITY version   "2023.04.23">
+  <!ENTITY version   "2024.02.03">
   <!ENTITY gitURL    "https://github.com/&author;/unraid-&name;/raw/master">
   <!ENTITY pluginURL "&gitURL;/&name;.plg">
-  <!ENTITY md5       "1685fedd2d5bec04d54ccea5ee341c59">
+  <!ENTITY md5       "bbf9e75821cb146274dc6ee6c8c75cd6">
   <!ENTITY plugin    "/boot/config/plugins/&name;">
   <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
@@ -13,6 +13,10 @@
 <PLUGIN  name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.8.3" support="https://forums.unraid.net/topic/92865-support-ich777-amd-vendor-reset-coraltpu-hpsahba/">
 
 <CHANGES>
+
+###2024.02.03
+- BREAKING CHANGE: This release breaks the old way of connecting and interacting with RCON, please issue rcon --help from the command line to get all new available and valid options
+- Changed main RCON CLI executable to: https://github.com/gorcon/rcon-cli
 
 ###2023.04.23
 - Fix: added missing library libmd
