@@ -45,22 +45,12 @@ rm -f $(ls /boot/config/plugins/&name;/rcon*.txz 2>/dev/null|grep -v '&version;'
 **RCON**
 
 This plugin adds RCON to your unRAID server and enables your to connecto to various servers who are following the RCON protocol standard.
-Simply issue 'rcon -h' from an unRAID Terminal and you get an overview on how to connect. A basic connection command will look like this: 'rcon -H RCONIP -p PORT -P PASSWORD' to end the connection press CTRL + C.
+Simply issue 'rcon -h' from an unRAID Terminal and you get an overview on how to connect. A basic connection command will look like this: 'rcon -a RCONIP:RCONPORT -p PASSWORD' to end the connection press CTRL + C.
 
 ATTENTION: The RCON protocol transmits everything un-encrypted (including your password!). Therefore it is strongly recommended to not connect to RCON over the internet rather it is recommended to use a VPN or SSH if you want to connect to a foreign server over the internet.
 
-Source: https://github.com/n0la/rcon
+Source: https://github.com/gorcon/rcon-cli
 </INLINE>
-</FILE>
-
-<FILE Name="&plugin;/libbsd-0.10.0-x86_64-2_slonly.txz" Run="upgradepkg --install-new">
-<URL>"&gitURL;/packages/libbsd-0.10.0-x86_64-2_slonly.txz"</URL>
-<MD5>1b8dbaa180721964bf9d864e50dae1ac</MD5>
-</FILE>
-
-<FILE Name="&plugin;/libmd-1.0.4-x86_64-1cf.txz" Run="upgradepkg --install-new">
-<URL>"&gitURL;/packages/libmd-1.0.4-x86_64-1cf.txz"</URL>
-<MD5>8f5e2d1f113bb74eca05a8c1c52deac5</MD5>
 </FILE>
 
 <FILE Run="/bin/bash" Method="remove">
@@ -71,8 +61,6 @@ echo "----------Uninstalling RCON-----------"
 echo "--------------------------------------"
 # Remove plugin related files
 removepkg rcon-&version;
-removepkg libbsd-0.10.0-x86_64-2_slonly
-removepkg libmd-1.0.4-x86_64-1cf
 rm -rf /usr/local/emhttp/plugins/&name;
 rm -rf &plugin;
 echo
